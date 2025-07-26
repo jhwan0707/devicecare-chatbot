@@ -16,12 +16,27 @@ This project provides a simple React client that connects to OpenAI's GPT‑4 As
    ```bash
    npm start
    ```
-4. Open http://localhost:3000 to view the chatbot. (Should be automatic, but if not follow Step 4.)
+4. Open http://localhost:3000 to view the chatbot.
 
 ## FAQ Integration
 
-The file `src/faqs.js` contains the DeviceCare FAQ text. This string is sent as a system prompt in `src/openai.js` so the assistant (GPT-4) answers questions only using that information. If a question doesn't relate to the FAQs, the API response falls back to an "out of scope" message.
+The file `src/faqs.js` contains the DeviceCare FAQ text. This string is sent as a system prompt in `src/openai.js` so the assistant answers questions only using that information. If a question doesn't relate to the FAQs, the API response falls back to an "out of scope" message.
 
+## Deployment
+
+Create an optimized build that can be uploaded to any static host:
+
+```bash
+npm run build
+```
+
+The compiled files will be placed in the `build/` directory. You can preview them locally with:
+
+```bash
+npx serve -s build
+```
+
+Copy the `build/` directory to your preferred hosting service (GitHub Pages, Netlify, Vercel, etc.) to deploy the chatbot.
 
 ## Features
 
@@ -30,4 +45,3 @@ The file `src/faqs.js` contains the DeviceCare FAQ text. This string is sent as 
 - When a question is out of scope, the app suggests contacting live support via email.
 - Polished pastel design with rounded message bubbles for a friendlier look.
 - Friendly greetings like "hello" receive a polite response instead of an out-of-scope warning.
-

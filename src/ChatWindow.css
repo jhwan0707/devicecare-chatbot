@@ -35,14 +35,14 @@
 .MessageInput button {
   padding: 8px 16px;
   border-radius: 20px;
-  background-color: #ff86a5;
+  background-color: var(--send-button-color);
   color: #fff;
   border: none;
   cursor: pointer;
 }
 
 .MessageInput button:hover {
-  background-color: #ff6b8b;
+  background-color: var(--send-button-hover);
 }
 
 .SupportLink {
