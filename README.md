@@ -2,6 +2,8 @@
 
 This project provides a simple React client that connects to OpenAI's GPT‑4 Assistants API to answer DeviceCare FAQs. If a user's question is not covered by the FAQ data, the assistant responds that the question is out of scope.
 
+<img width="1728" height="956" alt="Screenshot 2025-07-26 at 2 30 18 PM" src="https://github.com/user-attachments/assets/1f2c4a7e-9e13-4a3c-ac8f-17fd6905240b" />
+
 ## Setup
 
 1. Install dependencies:
