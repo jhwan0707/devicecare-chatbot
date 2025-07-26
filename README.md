@@ -14,6 +14,7 @@ This project provides a simple React client that connects to OpenAI's GPT‑4 As
    ```
 3. Start the development server:
    ```bash
+
   npm start
   ```
 4. Open http://localhost:3000 to view the chatbot.
@@ -25,12 +26,15 @@ git reset --hard 3d141a00
 ```
 then reinstall dependencies with `npm install`.
 
+
 ## FAQ Integration
 
 The FAQ text is stored in `src/faqs.js` and provided to the GPT‑4 model in every request via the system prompt.
+
 
 ## Features
 
 - Chat history persists in the browser so conversations are not lost on refresh.
 - Messages display timestamps for better context.
 - When a question is out of scope, the app suggests contacting live support via email.
+
