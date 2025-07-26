@@ -17,6 +17,7 @@ This project provides a simple React client that connects to OpenAI's GPT‑4 As
    npm start
    ```
 
+
 ## FAQ Integration
 
 The FAQ text is stored in `src/faqs.js` and provided to the GPT‑4 model in every request via the system prompt.
