@@ -16,6 +16,8 @@ function ChatBubble({ message }) {
         </span>
       )}
     </div>
+  const { role, content } = message;
+  return (
   );
 }
 
