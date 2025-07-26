@@ -14,8 +14,8 @@ This project provides a simple React client that connects to OpenAI's GPT‑4 As
    ```
 3. Start the development server:
    ```bash
-  npm start
-  ```
+   npm start
+   ```
 4. Open http://localhost:3000 to view the chatbot.
 
 If you accidentally deleted project files or encounter a blank screen, you can
