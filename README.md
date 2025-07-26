@@ -16,6 +16,7 @@ This project provides a simple React client that connects to OpenAI's GPT‑4 As
    ```bash
    npm start
    ```
+4. Open http://localhost:3000 to view the chatbot.
 
 ## FAQ Integration
 
