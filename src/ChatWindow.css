@@ -1,0 +1,27 @@
+.ChatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 16px;
+}
+
+.ChatMessages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin-bottom: 12px;
+}
+
+.MessageInput {
+  display: flex;
+}
+
+.MessageInput input {
+  flex: 1;
+  padding: 8px;
+}
+
+.MessageInput button {
+  padding: 8px 12px;
+}
