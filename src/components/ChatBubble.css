@@ -1,0 +1,17 @@
+.ChatBubble {
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 4px;
+  max-width: 75%;
+}
+
+.ChatBubble-user {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+.ChatBubble-assistant {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
