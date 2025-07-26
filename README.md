@@ -4,6 +4,9 @@ This project provides a simple React client that connects to OpenAI's GPT‑4 As
 
 <img width="1728" height="956" alt="Screenshot 2025-07-26 at 2 30 18 PM" src="https://github.com/user-attachments/assets/1f2c4a7e-9e13-4a3c-ac8f-17fd6905240b" />
 
+## Prerequisites
+- An OpenAI API key
+  
 ## Setup
 
 First, clone this repository to your local machine and enter the project folder:
@@ -26,9 +29,9 @@ cd devicecare-chatbot
    ```
 4. Open http://localhost:3000 to view the chatbot. (Should be automatic, but if fail, open URL in browser)
 
-## FAQ Integration
+## How It Works (FAQ Integration)
 
-The file `src/faqs.js` contains the DeviceCare FAQ text. This string is sent as a system prompt in `src/openai.js` so the assistant answers questions only using that information. If a question doesn't relate to the FAQs, the API response falls back to an "out of scope" message.
+`src/faqs.js` contains the FAQ text. The helper in `src/openai.js` sends this text as the system prompt when requesting completions from GPT‑4. If a response does not match the FAQs, the assistant returns an "out of scope" message along with a link to contact support.
 
 ## Deployment
 
