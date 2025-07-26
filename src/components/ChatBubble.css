@@ -3,6 +3,10 @@
   margin: 6px 0;
   border-radius: 4px;
   max-width: 75%;
+
+  display: flex;
+  flex-direction: column;
+
 }
 
 .ChatBubble-user {
@@ -14,4 +18,11 @@
 .ChatBubble-assistant {
   background-color: #f1f1f1;
   align-self: flex-start;
+}
+
+.ChatBubble-time {
+  align-self: flex-end;
+  font-size: 0.75em;
+  color: #555;
+  margin-top: 2px;
 }
