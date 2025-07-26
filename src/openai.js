@@ -1,6 +1,12 @@
 import { FAQ_PROMPT } from './faqs';
 
 export async function getAssistantResponse(history) {
+  const lastUser = [...history].reverse().find((m) => m.role === 'user');
+  const text = lastUser?.content?.trim().toLowerCase() || '';
+  if (/^(hi|hello|hey|good (morning|afternoon|evening))\b/.test(text)) {
+    return 'Hello! How can I assist you with DeviceCare today?';
+  }
+
   const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
   if (!apiKey) {
     throw new Error('OpenAI API key not configured');

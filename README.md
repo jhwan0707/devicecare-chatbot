@@ -28,4 +28,5 @@ The FAQ text is stored in `src/faqs.js` and provided to the GPT‑4 model in eve
 - Messages display timestamps for better context.
 - When a question is out of scope, the app suggests contacting live support via email.
 - Polished pastel design with rounded message bubbles for a friendlier look.
+- Friendly greetings like "hello" receive a polite response instead of an out-of-scope warning.
 
