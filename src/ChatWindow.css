@@ -1,0 +1,42 @@
+.ChatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.ChatMessages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.MessageInput {
+  display: flex;
+}
+
+.MessageInput input {
+  flex: 1;
+  padding: 8px;
+}
+
+.MessageInput button {
+  padding: 8px 12px;
+}
+
+.SupportLink {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+.SupportLink a {
+  color: #007bff;
+  text-decoration: none;
+}
