@@ -14,16 +14,9 @@ This project provides a simple React client that connects to OpenAI's GPT‑4 As
    ```
 3. Start the development server:
    ```bash
-  npm start
-  ```
+   npm start
+   ```
 4. Open http://localhost:3000 to view the chatbot.
-
-If you accidentally deleted project files or encounter a blank screen, you can
-restore the last known good state with:
-```bash
-git reset --hard 3d141a00
-```
-then reinstall dependencies with `npm install`.
 
 ## FAQ Integration
 
@@ -52,4 +45,3 @@ Copy the `build/` directory to your preferred hosting service (GitHub Pages, Net
 - When a question is out of scope, the app suggests contacting live support via email.
 - Polished pastel design with rounded message bubbles for a friendlier look.
 - Friendly greetings like "hello" receive a polite response instead of an out-of-scope warning.
-- The send button color can be changed by editing `--send-button-color` and `--send-button-hover` in `src/index.css`.
