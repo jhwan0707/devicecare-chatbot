@@ -6,6 +6,12 @@ This project provides a simple React client that connects to OpenAI's GPT‑4 As
 
 ## Setup
 
+First, clone this repository to your local machine and enter the project folder:
+```bash
+git clone https://github.com/jhwan0707/devicecare-chatbot.git
+cd devicecare-chatbot
+```
+
 1. Install dependencies:
    ```bash
    npm install
