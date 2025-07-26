@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 16px;
-  background-color: #fafafa;
+  padding: 24px;
+  box-sizing: border-box;
+  background: transparent;
 }
 
 .ChatMessages {
@@ -12,9 +13,11 @@
   flex-direction: column;
   overflow-y: auto;
   margin-bottom: 12px;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  padding: 16px;
+  background-color: #ffffffee;
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .MessageInput {
@@ -23,11 +26,23 @@
 
 .MessageInput input {
   flex: 1;
-  padding: 8px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
 }
 
 .MessageInput button {
-  padding: 8px 12px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #ff86a5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.MessageInput button:hover {
+  background-color: #ff6b8b;
 }
 
 .SupportLink {
@@ -37,6 +52,6 @@
 }
 
 .SupportLink a {
-  color: #007bff;
+  color: #ff6b8b;
   text-decoration: none;
 }
