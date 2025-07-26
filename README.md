@@ -20,7 +20,8 @@ This project provides a simple React client that connects to OpenAI's GPT‑4 As
 
 ## FAQ Integration
 
-The FAQ text is stored in `src/faqs.js` and provided to the GPT‑4 model in every request via the system prompt.
+The file `src/faqs.js` contains the DeviceCare FAQ text. This string is sent as a system prompt in `src/openai.js` so the assistant (GPT-4) answers questions only using that information. If a question doesn't relate to the FAQs, the API response falls back to an "out of scope" message.
+
 
 ## Features
 
