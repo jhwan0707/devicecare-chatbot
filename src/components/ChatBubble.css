@@ -1,0 +1,27 @@
+.ChatBubble {
+  padding: 10px 14px;
+  margin: 6px 0;
+  border-radius: 16px;
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ChatBubble-user {
+  background: linear-gradient(135deg, #ffd1dc, #ff86a5);
+  color: white;
+  align-self: flex-end;
+}
+
+.ChatBubble-assistant {
+  background-color: #f1faff;
+  align-self: flex-start;
+}
+
+.ChatBubble-time {
+  align-self: flex-end;
+  font-size: 0.75em;
+  color: #555;
+  margin-top: 2px;
+}

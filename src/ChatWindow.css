@@ -1,0 +1,57 @@
+.ChatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 24px;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.ChatMessages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  padding: 16px;
+  background-color: #ffffffee;
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.MessageInput {
+  display: flex;
+}
+
+.MessageInput input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+}
+
+.MessageInput button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #ff86a5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.MessageInput button:hover {
+  background-color: #ff6b8b;
+}
+
+.SupportLink {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+.SupportLink a {
+  color: #ff6b8b;
+  text-decoration: none;
+}
